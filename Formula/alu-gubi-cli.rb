@@ -1,8 +1,25 @@
+# typed: false
+# frozen_string_literal: true
+
+# ALU GUBI CLI — encrypted release formula (format v2 hybrid envelope)
+#
+# Encryption / supply-chain (matches Pages releases/manifest.json):
+#   - Key wrap:     ML-KEM-768 (FIPS 203) encapsulates the AES-256-GCM data key
+#   - Bulk cipher:  AES-256-GCM payload encryption
+#   - Manifest:     ML-DSA-65 (FIPS 204) signed release manifest
+#   - Integrity:    Homomorphic ciphertext seal verified before decrypt
+#   - Loader:       Split-key stub/header shards + ephemeral decrypt-and-exec
+#
+# Install:
+#   brew tap shyamalschandra/alu-gubi-cli
+#   brew trust --formula shyamalschandra/alu-gubi-cli/alu-gubi-cli
+#   brew install alu-gubi-cli
+
 class AluGubiCli < Formula
-  desc "ALU GUBI — Gamified Universal Basic Income CLI (100% Pure Rust, encrypted release)"
+  desc "ALU GUBI — Gamified Universal Basic Income CLI (ML-KEM-768 encrypted release)"
   homepage "https://shyamalschandra.github.io/alu-gubi-cli/"
   url "https://shyamalschandra.github.io/alu-gubi-cli/releases/alu-gubi-cli-0.1.0-macos-arm64.tar.gz"
-  sha256 "066caf044ab54aa260362be582a5ad9698dc45c9d33149f74a474ceb9f584e74"
+  sha256 "0cf5f024ca6846e32f80aa2b4420eff222d386b4a75ef43cdbb760fef9967ef2"
   license "CC-BY-ND-4.0"
 
   depends_on "ollama" => :recommended
@@ -14,12 +31,14 @@ class AluGubiCli < Formula
 
   def caveats
     <<~EOS
-      🦀 ALU GUBI encrypted CLI installed!
+      🦀 ALU GUBI encrypted CLI installed (format v2)!
 
         alu-gubi-cli ui
-        alu-gubi-cli moby up -d
+        alu-gubi-cli moby-up -d
+        alu-gubi-cli serve
 
-      Binary is AES-256-GCM encrypted with homomorphic seal verification at runtime.
+      Envelope: ML-KEM-768 key wrap + AES-256-GCM bulk + ML-DSA-65 signed
+      manifest + homomorphic seal. No plaintext payload on disk at rest.
     EOS
   end
 
