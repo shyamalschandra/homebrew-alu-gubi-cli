@@ -19,7 +19,7 @@ class AluGubiDriver < Formula
   desc "ALU GUBI — thin pure-Rust REST API driver (ML-KEM-768 encrypted release)"
   homepage "https://shyamalschandra.github.io/alu-gubi-cli/"
   url "https://shyamalschandra.github.io/alu-gubi-cli/releases/alu-gubi-driver-0.1.0-macos-arm64.tar.gz"
-  sha256 "69d141b28cd18b74113b61147540112f1ff6b2386b1a7dd92235bc0fce051947"
+  sha256 "2f57bb58f7baef4622783be6428f265109f248da257dd07339f148ea2bea31ab"
   license "CC-BY-ND-4.0"
 
   def install
@@ -34,9 +34,10 @@ class AluGubiDriver < Formula
       Terminal 1 — start the server API:
         alu-gubi-cli serve
 
-      Terminal 2 — run the showcase tour:
-        alu-gubi-driver demo
-        # or: gubi-driver demo
+      Terminal 2 — continuous live TUI (q to quit):
+        alu-gubi-driver live --zip 94102 --display-name "Demo Citizen"
+        # aliases: watch · tui · demo --watch
+        # one-shot: alu-gubi-driver demo
 
       Envelope: ML-KEM-768 key wrap + AES-256-GCM bulk + ML-DSA-65 signed
       manifest + homomorphic seal (same as alu-gubi-cli).
