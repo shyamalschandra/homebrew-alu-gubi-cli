@@ -19,7 +19,7 @@ class AluGubiDriver < Formula
   desc "ALU GUBI — thin pure-Rust REST API driver (ML-KEM-768 encrypted release)"
   homepage "https://github.com/shyamalschandra/alu_gubi"
   url "https://shyamalschandra.github.io/alu-gubi-cli/releases/alu-gubi-driver-0.1.0-macos-arm64.tar.gz"
-  sha256 "581a8c13aedec7d056907a1592524e2fd6753b9ad24a38ebc3e59be2576fef37"
+  sha256 "483d2d0663b4c3493a29a5d5dd46a8c2edfe1f5c2727822ee8f6c7e3f80a0cd9"
   license "CCSL-1.0a"
 
   def install
