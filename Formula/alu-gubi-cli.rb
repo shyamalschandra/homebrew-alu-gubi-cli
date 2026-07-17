@@ -19,7 +19,7 @@ class AluGubiCli < Formula
   desc "ALU GUBI — Gamified Universal Basic Income CLI (ML-KEM-768 encrypted release)"
   homepage "https://github.com/shyamalschandra/alu_gubi"
   url "https://shyamalschandra.github.io/alu-gubi-cli/releases/alu-gubi-cli-0.1.0-macos-arm64.tar.gz"
-  sha256 "5bd3aff32d6322bb56ddc60bb01a91abd58017d2e073b3a704e99e159e3dc273"
+  sha256 "4c855a5ec3d5c198736170c890a1bde4ed913d3f611384b32bebf4d2a26f58b6"
   license "CC-BY-ND-4.0"
 
   depends_on "ollama" => :recommended
