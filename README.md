@@ -35,11 +35,4 @@ alu-gubi-cli serve
 alu-gubi-driver demo
 ```
 
-No tap clone? Install directly from formula URLs on GitHub Pages:
-
-```bash
-brew install https://shyamalschandra.github.io/alu-gubi-cli/homebrew-alu-gubi/Formula/alu-gubi-cli.rb
-brew install https://shyamalschandra.github.io/alu-gubi-cli/homebrew-alu-gubi/Formula/alu-gubi-driver.rb
-```
-
 Website: https://shyamalschandra.github.io/alu-gubi-cli/
