@@ -39,6 +39,10 @@ class AluGubiDriver < Formula
         # aliases: watch · tui · demo --watch
         # one-shot: alu-gubi-driver demo
 
+      Herd computing (100B virtual people → RNG JSON tokens):
+        alu-gubi-driver herd --dry-run
+        alu-gubi-driver herd --dry-run -g 64 --batch-size 128 -r 8 --interval 10
+
       Envelope: ML-KEM-768 key wrap + AES-256-GCM bulk + ML-DSA-65 signed
       manifest + homomorphic seal (same as alu-gubi-cli).
     EOS
