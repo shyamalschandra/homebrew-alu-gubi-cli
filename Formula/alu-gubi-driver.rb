@@ -41,7 +41,9 @@ class AluGubiDriver < Formula
 
       Herd computing (100B virtual people → RNG JSON tokens):
         alu-gubi-driver herd --dry-run
-        alu-gubi-driver herd --dry-run -g 64 --batch-size 128 -r 8 --interval 10
+        alu-gubi-driver herd-stream --dry-run
+        # real-time TUI (q quit · space pause): tick-driven, not batch rounds
+        alu-gubi-driver herd-stream -g 32 --chunk 2 --tick 20 --dry-run
 
       Envelope: ML-KEM-768 key wrap + AES-256-GCM bulk + ML-DSA-65 signed
       manifest + homomorphic seal (same as alu-gubi-cli).
