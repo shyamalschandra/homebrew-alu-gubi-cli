@@ -20,7 +20,7 @@ class AluGubiCli < Formula
   homepage "https://github.com/shyamalschandra/alu_gubi"
   url "https://shyamalschandra.github.io/alu-gubi-cli/releases/alu-gubi-cli-0.1.0-macos-arm64.tar.gz"
   sha256 "4c855a5ec3d5c198736170c890a1bde4ed913d3f611384b32bebf4d2a26f58b6"
-  license "CCSL-0.1a"
+  license "CCSL-1.0a"
 
   depends_on "ollama" => :recommended
 

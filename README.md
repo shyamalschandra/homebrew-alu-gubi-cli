@@ -37,5 +37,14 @@ alu-gubi-cli serve
 alu-gubi-driver demo
 ```
 
-Website: https://shyamalschandra.github.io/alu-gubi-cli/
+## License & Credit
+
+**[CCSL-1.0a — Chandra Credit Software License](https://shyamalschandra.github.io/alu-gubi-cli/license/)** by Shyamal Suhana Chandra.
+
+- License page: https://shyamalschandra.github.io/alu-gubi-cli/license/
+- PayPal.me Credit: https://paypal.me/shyamalschandra
+- Microsoft Rewards: arrange via shyamal@shyamalchandra.com
+- OpenAI conditioning: https://chatgpt.com/share/6a5a6001-5d88-83ea-ac88-7090df3d8e30
+
+Website: https://shyamalschandra.github.io/alu-gubi-cli/  
 Charter: https://github.com/shyamalschandra/alu_gubi

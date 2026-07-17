@@ -20,7 +20,7 @@ class AluGubiDriver < Formula
   homepage "https://github.com/shyamalschandra/alu_gubi"
   url "https://shyamalschandra.github.io/alu-gubi-cli/releases/alu-gubi-driver-0.1.0-macos-arm64.tar.gz"
   sha256 "581a8c13aedec7d056907a1592524e2fd6753b9ad24a38ebc3e59be2576fef37"
-  license "CCSL-0.1a"
+  license "CCSL-1.0a"
 
   def install
     bin.install "alu-gubi-driver-0.1.0-macos-arm64" => "alu-gubi-driver"
