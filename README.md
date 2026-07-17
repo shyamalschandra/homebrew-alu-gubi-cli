@@ -2,6 +2,8 @@
 
 Official tap for **ALU GUBI** encrypted binaries (Pages-hosted artifacts).
 
+**Project of record:** [shyamalschandra/alu_gubi](https://github.com/shyamalschandra/alu_gubi) — Gamified Universal Basic Income for GOs and NGOs. This tap is the industrial install channel conditioned by that charter.
+
 Release envelope (format v2): **ML-KEM-768** key wrap + **AES-256-GCM** bulk + **ML-DSA-65** signed manifest + homomorphic seal.
 
 | Formula | Binary | Role |
@@ -36,3 +38,4 @@ alu-gubi-driver demo
 ```
 
 Website: https://shyamalschandra.github.io/alu-gubi-cli/
+Charter: https://github.com/shyamalschandra/alu_gubi
